@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-bottom: 3px solid red;
+}
+
+header h1 {
+  font-size: 35px;
+  color: red;
+}
+
+header p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.hero img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.episodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #1b1b1b;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255,0,0,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h2 {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.card button {
+  margin: 15px;
+  padding: 12px 20px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: darkred;
+}
+
+.player-section {
+  padding: 20px;
+}
+
+video {
+  width: 100%;
+  border-radius: 15px;
+  background: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
